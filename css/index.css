@@ -1,0 +1,335 @@
+.mainBanner{
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) no-repeat;
+    height: 840px;
+    background-size: cover;
+    background-position: center center;
+}
+.mainBanner-container{
+    /* max-width:1110px ; */
+    max-width: 70%;
+}
+.mainBanner-subTitle{
+    line-height: 50px;
+}
+.mainBanner-title{
+    line-height: 90px;
+}
+
+.mainTitle{
+    line-height: 67px;
+    margin-bottom: 60px;
+}
+/*feature*/
+
+.feature{
+    width: 100%;
+}
+.feature-item{
+    width: 208px;
+}
+.feature-icon{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.feature-subtitle{
+    font-weight: 700;
+    line-height: 33px;
+    margin-bottom: 4px;
+}
+
+/*classglasses*/
+.classglasses-item{
+    margin-bottom: 32px;
+}
+.classglasses-link{
+    position: relative;
+}
+.classglasses-pic{
+    margin-right: 30px;
+    width: 635px;
+}
+.classglasses-item:nth-child(2) .classglasses-pic{
+    margin-right: 0;
+    margin-left: 30px;
+}
+.classglasses-icon{
+    margin-right: 8px;
+}
+.classglasses-subtitle{
+    font-family: 'Roboto';
+    font-style: italic;
+    line-height: 63px;
+}
+.classglassesMobile-subtitle{
+    display:none;
+}
+/* cobrand */
+.cobrand-item-brand{
+    position: relative;
+}
+.cobrandBg{
+    background: url(/images/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cobrand-item{
+    width: 49%;
+}
+.cobrand-item-brand:before{
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255 , 255 , 255 , 0.5);
+    overflow: hidden;
+    width: 100%;
+}
+.cobrand-pic{
+    width: 100%;
+}
+.cobrand-title{
+    line-height: 95px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    white-space: nowrap;
+}
+/*customer*/
+.customer{
+    font-family: "Roboto";
+}
+.customer-subtitle{
+    line-height: 19px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.customer-item{
+    width: 24%;
+    border: 1px solid #DEE2E6;
+}
+.customer-body{
+    padding: 14px 16px 15px 16px ;
+}
+.customer-text{
+    margin-bottom: 10px;
+}
+.customer-pic{
+    width: 100%;
+}
+/* contact */
+.contact-container{
+    max-width: 730px;
+    margin: 0 auto;
+}
+.contactTitle{
+    line-height: 67px;
+    margin-bottom: 24px;
+}
+.contactText{
+    margin-bottom: 20px;
+}
+
+.form-group{    
+    margin-bottom: 16px;
+}
+.form-label{
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 14px 0 16px 14px;
+    font-size: 16px;
+}
+input::placeholder , textarea::placeholder{
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.2;
+}
+textarea{
+    height:136px ;
+}
+.form-group-checkbox{
+    margin-bottom: 42px;
+}
+.btn{
+    width: calc(100% - 400px);
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #650300;
+}
+
+@media(max-width:1099px){
+    
+    /* customer */
+    .customer-item{
+        margin-bottom: 28px;
+    }
+}
+
+
+@media(max-width:992px){
+    .mainTitle{        
+        line-height: 45px;
+        margin-bottom: 32px;
+    }
+    .mainBanner-container{
+        max-width:690px ;
+    }
+    .mainBanner-subTitle{
+        line-height: 28px;
+    }
+    .mainBanner-title{
+        line-height: 67px;
+    }
+    /*feature*/
+    .feature-title{
+        line-height: 45px;
+        margin-bottom: 32px;
+    }
+    .feature-icon{
+        margin-bottom: 16px;
+    }    
+    .feature-item{
+        width: 237px;
+        margin-bottom: 40px;
+    }
+    .feature-subtitle{
+        line-height: 28px;
+        margin-bottom: 8px;
+    }
+    /* classglasses */
+    .classglasses-item{
+        margin-bottom: 8px;
+    }
+    .classglasses-item:nth-child(2) .classglasses-pic{
+        margin-right: 30px;
+        margin-left: 0;
+    }
+    .classglasses-pic{
+        width: 390px;
+    }
+    .classglasses-subtitle{
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .classglasses-icon{
+        width: 32px;
+    }
+    /* cobrand */
+    
+    .cobrandBg{
+        height: 473px;
+    }
+    .cobrand-title{
+        font-size: 32px;
+        line-height: 43px;
+    }
+    /* customer */
+    .customer{
+        max-width: 690px;
+    }
+    .customer-item{
+        width: 49%;
+    }
+    .customer-body{
+        padding: 16px;
+    }
+    .customer-subtitle , .customer-text{
+        margin-bottom: 16px;
+    }
+    /* contact */
+    .contact-container{
+        max-width: 450px;
+    }
+    textarea{
+        height:100px ;
+    }
+    .form-group-checkbox{
+        margin-bottom: 20px;
+    }
+    .btn{
+        width: calc(100% - 50px);
+    }
+}
+
+@media(max-width:767px){
+    .mainTitle{        
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .mainBanner{
+        height:394px ;
+    }
+    .mainBanner-container{
+        max-width:345px ;
+    }
+    .mainBanner-subTitle{
+        line-height: 22px;
+    }
+    .mainBanner-title{
+        line-height: 45px;
+    }
+    /*feature*/
+    .feature-title{
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+    /* classglasses */
+    .classglasses-pic , .classglasses-item:nth-child(2) .classglasses-pic{
+        margin-right: 0;
+    }
+    .classglassesMobile-subtitle{
+        display: block;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        white-space: nowrap;
+        font-weight: 700;
+    }
+    .classglassesMobile-icon{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+    .classglasses-subtitle{
+        display: none;
+    }
+    /* cobrand */
+    
+    .cobrandBg{
+        height: 696px;
+    }
+    .cobrand-item{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .cobrand-pic{
+        height: 284px;
+    }
+    /* customer */
+    .customer-item{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    /* contact */
+    .contact-container{
+        max-width: 345px;
+    }
+    .form-group-checkbox{
+        margin-bottom: 24px;
+    }
+}
